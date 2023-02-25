@@ -38,10 +38,6 @@ use Illuminate\Support\Facades\Auth;
 
 
 
-Route::get('/', function () {
-    return view('welcome');
-});
-  
   
 Route::get('otp/login', [App\Http\Controllers\Auth\AuthOtpController::class, 'login'])->name('otp.login');
 Route::post('otp/generate', [App\Http\Controllers\Auth\AuthOtpController::class, 'generate'])->name('otp.generate');
@@ -49,7 +45,7 @@ Route::get('otp/verification/{user_id}', [App\Http\Controllers\Auth\AuthOtpContr
 Route::post('otp/login', [App\Http\Controllers\Auth\AuthOtpController::class, 'loginWithOtp'])->name('otp.getlogin');
 
 
-Route::get('/', [HomeController::class, 'index']);
+Route::get('/', [HomeController::class, 'index'])->name('root');
 Route::group(['middleware' => ['auth']], function () {
 Route::get('/comparecar', [ComparecarController::class, 'index']);
 Route::get('/contact', [ContactController::class, 'index']);
