@@ -328,7 +328,8 @@
 
 
 
-                    <form method="GET" action="{{ route('otp.generate') }}">
+                    <form method="POST" action="{{ route('otp.generate') }}">
+                        @csrf
                         <div class="row mb-3">
                             <label for="mobile_no" class="col-md-4 col-form-label text-md-end">{{ __('Mobile No') }}</label>
   

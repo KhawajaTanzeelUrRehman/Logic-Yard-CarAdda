@@ -1,7 +1,3 @@
-    @php
-        header("Location: " . URL::to('/'), true, 302);
-        exit();
-    @endphp
 @extends('layouts.app')
 @section('content')
 <div class="container">
