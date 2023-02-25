@@ -1,0 +1,231 @@
+.D1{
+    background: rgb(255 255 255) !important;
+}
+/* .D2{
+    color: #080e1b;
+
+} */
+
+.D3{
+padding-top: 1%;
+padding-bottom: 1%;
+}
+.D4{
+    margin-top: -103%;
+    margin-left: -104%;
+    font-size: 110%;
+}
+.D5{
+    margin-left: -79%;
+    /* width: 68%; */
+    margin-right: -124%;
+}
+.D6{
+    
+    margin-left: -112%;
+    margin-right: -108%
+}
+
+.s2{
+    color: black;
+
+}
+/* ----------------login with number------------ */
+.form-popup-bg {
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
+  .form-popup-bg {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    /* background-color: rgb(0 50 126 / 12%); */
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+    -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+    transition: opacity 0.3s 0s, visibility 0s 0.3s;
+    overflow-y: auto;
+    z-index: 10000;
+  }
+  .form-popup-bg.is-visible {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+    -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
+    transition: opacity 0.3s 0s, visibility 0s 0s;
+  }
+  .form-container {
+      background-color:#fff;
+      border-radius: 10px;
+      
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+      position:relative;
+    padding: 40px;
+    color: #fff;
+  }
+  .close-button {
+    background: rgb(243, 29, 29);
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    border-radius: 50%;
+    position: absolute;
+    top: -22px;
+    right: -19px;
+    border: none;
+  }
+  
+  .form-popup-bg:before{
+      content:'';
+      background-color: rgb(0, 0, 0);
+      opacity: .7;
+      position:absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+  }
+  /* -------Location------- */
+  .desktoplogo{
+    padding: 1rem 0;
+  }
+  .desktoplogo img{
+    max-width: 190px;
+  }
+  .float-left {
+    float: left !important;
+  }
+  .owl-carousel .owl-item img {
+    height: 175px;
+    object-fit: cover;
+  }
+  .rating-stars {
+    color: #080e1b;
+  }
+  .rating-stars .rating-stars-container .rating-star.sm {
+    display: inline-block;
+    font-size: 14px;
+    color: #c3cbdc;
+    cursor: pointer;
+    padding: 1px;
+  }
+  .rating-stars .rating-stars-container .rating-star.is--active, .rating-stars .rating-stars-container .rating-star.is--hover {
+    color: #f1c40f;
+  }
+  .btn-get-otp{
+    min-width: 100%;
+  }
+  .abt-account{
+    text-align: center;
+  }
+  h3.faq{
+    padding-bottom: 10px;
+  }
+  /* .panel-heading1 .panel-body{
+    background-color: rgb(242, 242, 242);
+  } */
+  /********************************POPUP Start*****************************************/
+
+.modal-open {
+  overflow: hidden !important;
+}
+.modal::before {
+  display: none;
+}
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.otp-form{
+  display: none;
+}
+.signup-form{
+  display: none;
+}
+.modal-body label {
+  width: 100%;
+}
+.otp-inputs{
+  display: flex;
+  gap: 10px;
+}
+.card-footer-location{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.paging-block{
+  display: flex;
+  justify-content: center;
+}
+.card-body-news p{
+  height: 65px;
+  overflow: hidden;
+}
+#back-to-top i{
+	color: #fff;
+}
+#back-to-top:hover i{
+	color: var(--primary-bg-color);
+}
+@media (max-width: 1279px) {
+    .horizontalMenu > .horizontalMenu-list > li > a {
+      padding: 9px 10px;
+    }
+    .desktoplogo img {
+      max-width: 150px;
+    }
+    .horizontalMenu > .horizontalMenu-list > li {
+      padding: 1.15rem 0;
+    }
+    .btn-syc{
+      margin-top: 1.15rem !important;
+    }
+}
+
+@media (min-width: 776px){
+  .modal-xl {
+    max-width: calc(100% - 50px);
+    width: calc(100% - 50px);
+  }
+}
+@media (min-width: 1200px){
+  .modal-xl {
+    max-width: 1140px;
+    width: 1140px;
+  }
+}
+@media (max-width: 1080px){
+  .card-footer-location h4{
+    font-size: .95rem;
+  }
+
+}
+@media (max-width: 767px){
+  .modal-body {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+}
+@media (max-width: 575px){
+  .btn-close {
+    right: 5px;
+    top: 5px;
+  }
+}
