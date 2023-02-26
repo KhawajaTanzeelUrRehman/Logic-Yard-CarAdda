@@ -34,7 +34,9 @@ use Illuminate\Support\Facades\Auth;
 // Route::get('/', function () {return view('welcome');});
 
 
-
+Route::get('/test', function () {
+    return view('frontend.usedcar');
+});
 
 
 
